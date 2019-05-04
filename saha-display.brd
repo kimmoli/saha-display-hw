@@ -42,7 +42,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -144,10 +144,10 @@
 <wire x1="100" y1="0" x2="100" y2="56" width="0" layer="20"/>
 <wire x1="100" y1="56" x2="0" y2="56" width="0" layer="20"/>
 <wire x1="0" y1="56" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="0" y1="0" x2="100" y2="0" x3="50" y3="-8" textsize="2.5" layer="51"/>
-<dimension x1="0" y1="56" x2="0" y2="0" x3="-11.3" y3="28" textsize="2.5" layer="51"/>
-<dimension x1="3.5" y1="52.5" x2="96.5" y2="52.5" x3="50" y3="62" textsize="2.5" layer="51" dtype="horizontal"/>
-<dimension x1="96.5" y1="52.5" x2="96.5" y2="3.5" x3="116.9" y3="28" textsize="2.5" layer="51" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="100" y2="0" x3="50" y3="-8" textsize="2.5" layer="47"/>
+<dimension x1="0" y1="56" x2="0" y2="0" x3="-11.3" y3="28" textsize="2.5" layer="47"/>
+<dimension x1="3.5" y1="52.5" x2="96.5" y2="52.5" x3="50" y3="62" textsize="2.5" layer="47" dtype="horizontal"/>
+<dimension x1="96.5" y1="52.5" x2="96.5" y2="3.5" x3="116.9" y3="28" textsize="2.5" layer="47" dtype="vertical"/>
 <text x="81.2" y="34.5" size="1.5" layer="22" font="vector" rot="MR0">I2C ADDRESS
 0x70...0x77
 1110ABC</text>
@@ -172,10 +172,12 @@ K3
 K2
 K1
 K0</text>
-<text x="81.8" y="0.8" size="2" layer="1" font="vector" ratio="12">1</text>
-<text x="84.9" y="0.8" size="2" layer="16" font="vector" ratio="12" rot="MR0">2</text>
-<rectangle x1="81" y1="0.4" x2="85.6" y2="3.2" layer="30"/>
-<rectangle x1="81" y1="0.4" x2="85.6" y2="3.2" layer="29"/>
+<text x="86" y="1.6" size="2" layer="1" font="vector" ratio="12" align="center-left">1  </text>
+<text x="89" y="1.6" size="2" layer="16" font="vector" ratio="12" rot="MR0" align="center-left">2</text>
+<rectangle x1="85" y1="0.4" x2="89.8" y2="3.1" layer="30"/>
+<rectangle x1="85" y1="0.4" x2="89.8" y2="3.1" layer="41"/>
+<rectangle x1="85" y1="0.4" x2="89.8" y2="3.1" layer="42"/>
+<rectangle x1="85" y1="0.4" x2="89.8" y2="3.1" layer="29"/>
 </plain>
 <libraries>
 <library name="saha-display">
@@ -1380,22 +1382,6 @@ design rules under a new name.</description>
 <wire x1="51" y1="8.25" x2="51" y2="15" width="0.1524" layer="16"/>
 <wire x1="46.825" y1="19.175" x2="46.825" y2="23.35" width="0.1524" layer="16"/>
 <wire x1="51" y1="15" x2="46.825" y2="19.175" width="0.1524" layer="16"/>
-</signal>
-<signal name="N$2">
-<polygon width="0.25" layer="1" pour="cutout">
-<vertex x="85.5" y="0.5"/>
-<vertex x="85.5" y="3.1"/>
-<vertex x="81.1" y="3.1"/>
-<vertex x="81.1" y="0.5"/>
-</polygon>
-</signal>
-<signal name="N$3">
-<polygon width="0.25" layer="16" pour="cutout">
-<vertex x="85.5" y="0.5"/>
-<vertex x="85.5" y="3.1"/>
-<vertex x="81.1" y="3.1"/>
-<vertex x="81.1" y="0.5"/>
-</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
